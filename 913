@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+
+
+
+using namespace std;
+
+int main()
+{
+   double n,el1,el2,el3,el4;
+   double cem1=0.0000,hsl1=0.0000,cem2=0.0000,hsl2=0.0000;
+   cin>>n;
+   while(n--){
+       cin>>el1>>el2;
+       
+       cout <<fixed << setprecision(4) <<  el1 + el2 << " " << el1 * el2 << endl;
+       
+       
+       
+       
+       
+   }
+   
+}
