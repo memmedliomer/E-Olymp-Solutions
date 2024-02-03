@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+  long long n,a,b,cem=0,say=0;
+  cin>>n;
+  b=n;
+  for(int j=0; n>0; j++){
+      
+      for(int i=0; b>0; i++){
+      a=b%10;
+      cem=cem+a;
+      b=b/10;
+      
+  }
+  n=n-cem;
+  b=n;
+  say++;
+  cem=0;
+  
+  
+  
+  
+  
+}
+cout<<say;
+}
