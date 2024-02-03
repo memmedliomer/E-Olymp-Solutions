@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int a , b , c , d , e , f, cem = 0, w, k;
+  
+  cin >> k >> w;
+  cin >> a >> b >> c >> d >> e >> f;
+  
+  if((a + c <= w and b + d >= k) or (c + e <= w and f + d >= k) or (a + e <= w and f + b >= k) or (a + c + e <= w and b + d + f >= k) or( a <= w and b >= k) or (c <= w and d >= k) or (e <= w and f >= k))
+  {
+      cout << "YES" << endl;
+  }
+  else
+  {
+      cout << "NO" << endl;
+  }
+}
