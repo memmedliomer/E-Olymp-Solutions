@@ -1,0 +1,119 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   string s;
+   long long cem=0,say0=0,say1=0,say2=0,say3=0,say4=0,say5=0,say6=0,say7=0,say8=0,say9=0;
+   vector<long> v;
+   char sfr='0';
+   char bir='1';
+   char iki='2';
+   char uc='3';
+   char dord='4';
+   char bes='5';
+   char alti='6';
+   char yeddi='7';
+   char sekkiz='8';
+   char doqquz='9';
+   getline(cin, s);
+   for(long i=0; i<s.size(); i++){
+       if(s[i]==sfr){
+           say0++;
+       }
+       else if(s[i]==bir){
+           say1++;
+       }
+       else if(s[i]==iki){
+           say2++;
+       }
+       else if(s[i]==uc){
+           say3++;
+       }
+       else if(s[i]==dord){
+           say4++;
+       }
+       else if(s[i]==bes){
+           say5++;
+       }
+       else if(s[i]==alti){
+           say6++;
+       }
+       else if(s[i]==yeddi){
+           say7++;
+       }
+       else if(s[i]==sekkiz){
+           say8++;
+       }
+       else if(s[i]==doqquz){
+           say9++;
+       }
+        
+       
+           
+       }
+       if(say0>0){
+     cem=0;
+ }
+else{
+    v.push_back(0);
+}
+ if(say1>0){
+     cem=0;
+ }
+else{
+    v.push_back(1);
+}
+ if(say2>0){
+     cem=0;
+ }
+else{
+    v.push_back(2);
+}
+ if(say3>0){
+     cem=0;
+ }
+else{
+    v.push_back(3);
+}
+ if(say4>0){
+     cem=0;
+ }
+else{
+    v.push_back(4);
+}
+ if(say5>0){
+     cem=0;
+ }
+else{
+    v.push_back(5);
+}
+ if(say6>0){
+     cem=0;
+ }
+else{
+    v.push_back(6);
+}
+ if(say7>0){
+     cem=0;
+ }
+else{
+    v.push_back(7);
+}
+ if(say8>0){
+     cem=0;
+ }
+else{
+    v.push_back(8);
+}
+ if(say9>0){
+     cem=0;
+ }
+else{
+    v.push_back(9);
+}
+sort(v.begin(),v.end());
+cout<<v.size()<<endl;
+for(long i=0; i<v.size(); i++){
+    cout<<v[i]<<" ";
+}
+}
