@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int main() {
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
+	double a,b,c,d;
+	int n;
+	cin>>n;//n=1234
+	a=n%10; //a=4
+	b=n/10%10;//b=3;
+	c=n/100%10;//c=2;
+	d=n/1000; //d=1;
+	cout<<d<<b<<c<<a;
+}
+
