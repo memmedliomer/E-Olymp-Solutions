@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    //MY OWN CODE Eagle_of_code
+    long long say=0;
+    string s;
+    while(cin>>s){
+        if(s!="-"){
+            say++;
+        }
+}
+cout<<say;
+}
