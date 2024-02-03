@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    double  a,b,c,d,el,cem=0,say=0;
+    cin>>a;
+    vector<double> v;
+    while(a--){
+        cin>>el;
+        v.push_back(el);
+    }
+    double minel=*min_element(v.begin(),v.end());
+    cout<<fixed<<setprecision(2)<<minel*2;
+}
