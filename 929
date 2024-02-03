@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+  
+ float a,b,c,d;
+ cin>>a>>b>>c>>d;
+ 
+ if((a==b and c==d) or (a==c and b==d) or (a==d and  b==c) or (a==b and  b==c and c==d)){
+ 	cout<<"YES";
+ 	
+ }
+ else{
+ 	cout<<"NO";
+ }
+}
