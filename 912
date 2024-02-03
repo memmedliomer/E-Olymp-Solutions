@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string s;
+    getline(cin,s);
+    long long say=0,a,b,c,d,j;
+    for(int i=0; i<s.size(); i++){
+    
+    	
+		if(s[i]=='!' or s[i]=='.' or s[i]=='?'){
+		
+		say++;
+	}
+	while(i+1<s.size() and s[i]=='!' or s[i]=='.' or s[i]=='?'){
+    		i++;
+		}
+}
+
+
+cout<<say;
+}
