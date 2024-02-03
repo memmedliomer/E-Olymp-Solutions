@@ -1,0 +1,10 @@
+m, n, k = map(int, input().split())
+d = m % n
+
+print(m // n, end='.')
+for i in range(k):
+    d *= 10
+    print(d // n, end='')
+    d %= n
+
+print()
