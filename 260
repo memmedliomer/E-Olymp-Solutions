@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	
+   long long a,n,b;
+   cin>>a;
+   vector<long> v;
+   while(a--){
+   	cin>>n;
+   	v.push_back(n);
+   }
+   sort(v.begin(),v.end());
+   reverse(v.begin(),v.end());
+   for(int i=0; i<v.size(); i++){
+   	cout<<v[i]<<" ";
+   }
+}
