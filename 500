@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+
+	long long a,b,c,d,say;
+	cin>>a;
+	int x=a;
+	while(a--){
+		cin>>b>>c>>d;
+		say=2*b*d+2*d*c;
+		cout << ceil(double(say)/16) << endl;
+}
+}
