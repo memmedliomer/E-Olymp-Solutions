@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int main()
+{
+    long long n,c,deyer=0,s,r,say=0;
+    double el,cem=0.00,q,ort=0.00;
+    vector<double>v;
+    cin>>n;
+    c=n;
+    while(n--){
+        cin>>el;
+        v.push_back(el);
+        if(el>0){
+        cem=cem+el;
+        say++;
+        deyer++;
+        }
+        
+        }
+       s=v.size();
+if(say==0){
+    cout<<"Not Found";
+}
+else{
+q=cem/say;
+cout<<fixed<<setprecision(2)<<q<<endl;
+      
+}   
+    
+      
+
+}
