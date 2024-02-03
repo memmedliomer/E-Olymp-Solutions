@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+
+double x, y , z;
+cin >> x >> y >>z;
+
+double a = min(max(x,y), max(y,z)); 
+
+cout << min(a, (x + y + z));
+  
+}
