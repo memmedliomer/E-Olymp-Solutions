@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    long long a,b,c,d,say=0,mx1,mx2,mn1,mn2;
+    cin>>a>>b>>c>>d;
+    set<long> s;
+    mx1=max(a,b);
+     mx2=max(c,d);
+      mn1=min(a,b);
+       mn2=min(c,d);
+    for(int i=mn1; i<=mx1; i++){
+        for(int j=mn2;  j<=mx2; j++){
+            s.insert(i*j);
+        }
+    }
+    cout<<s.size();
+}
