@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std; 
+int main() { 
+ string s;
+ long long say=0;
+ getline(cin,s);
+ for(int i=0; i<s.size(); i++){
+     if(s[i]=='A' or s[i]=='E' or s[i]=='I' or s[i]=='O' or s[i]=='U' or s[i]=='Y'){
+         say++;
+     }
+ }
+cout<<say;
+}
