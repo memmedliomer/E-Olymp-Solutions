@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+  double x,y,d,say=0;
+  
+    cin>>x>>y;
+    
+while(x>y){
+    x=x/y;
+    say++;
+    
+}
+cout<<say;
+}
