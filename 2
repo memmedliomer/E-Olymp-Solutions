@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long  a,b,c,d,e,cem=0,say=0;
+    int n;
+    cin >>n;
+    n=abs(n);
+    vector<long> v;
+    for(int i=0; n>i; say++){
+        b=n%10;
+        v.push_back(b);
+        n=n/10;
+    }
+    if(v.size()==0){
+        cout<<1;
+    }
+    else{
+    cout<<v.size();
+}
+}
