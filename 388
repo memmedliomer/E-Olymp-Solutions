@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+   long long n,d,say=0;
+   cin>>n;
+   for(int i=0; n!=1; i++){
+       if(n%2!=0){
+           n=n+1;
+           say++;
+       }
+       n=n/2;
+       say++;
+   }
+   cout<<say;
+}
