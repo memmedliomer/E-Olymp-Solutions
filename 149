@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+long n,fac=1,say=0,x,y,i=0;
+double cem=0;
+cin>>n;
+for(i=1; i<=n; i++)
+{
+	cem=cem+log10(i);
+	
+}
+
+cout<<int(cem)+1;
+	
+	
+}
