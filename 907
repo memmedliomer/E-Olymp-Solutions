@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int main()
+{
+    int n,say=0,d;
+    double el,g;
+    cin>>n;
+    vector<double> v;
+    while(n--){
+        cin>>el;
+        v.push_back(el);
+
+
+
+    }
+
+for(int i=1; i<v.size()+1; i++){
+    if(v[i-1]<=2.5){
+        g=v[i-1];
+        d=i;
+    cout<<d<<" "<<fixed<<setprecision(2)<<g;
+    break;
+    }
+
+else{
+    say++;
+}
+}
+
+if(say==v.size()){
+    cout<<"Not Found";
+}
+}
