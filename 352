@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() { 
+
+double n,el;
+vector<double> v;
+while(cin>>n){
+	v.push_back(n);
+}
+el=*min_element(v.begin(),v.end());
+cout<<fixed<<setprecision(2)<<el;
+}
