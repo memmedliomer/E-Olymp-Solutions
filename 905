@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    int a,b,c;
+    cin >>a>>b>>c;
+    
+    if((a==b and c!=a)   or (a==c and b!=c)  or  (b==c and a!=c)){
+        cout<<"2";
+    }
+    else if(a==b and a==c){
+        cout<<"1";
+    }
+ else if(a!=b and c!=b and a!=c){
+     cout<<"3";
+ }
+}
