@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+ 
+int main () 
+ 
+{
+  
+    //MY OWN CODE Eagle_of_code
+    long long n,el,say=0;
+    vector<long> v;
+    cin>>n;
+    for(int i=0; n>0; i++){
+        if(n%2==0){
+            v.push_back(0);
+            n=n/2;
+        }
+        else{
+            v.push_back(1);
+            n=n/2;
+        }
+    }
+    for(int i=0; i<v.size(); i++){
+        if(v[i]==1){
+            say++;
+        }
+    }
+    cout<<say;
+}
