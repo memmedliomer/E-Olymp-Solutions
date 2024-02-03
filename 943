@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+  
+int a,b,c,d,e;
+
+    cin >> a;
+    b=a%10;
+    c=a%100/10;
+    d=a%1000/100;
+    e=b*100+c*10+d;
+    cout << e<<endl;
+       
+
+    return 0;
+}
