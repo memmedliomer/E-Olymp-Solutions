@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+	int a,b,c,d,e,f;
+	cin>>a>>b>>c>>d>>e>>f;
+    long long x=(a*3600)+(b*60)+(c);
+    long long y=(d*3600)+(e*60)+(f);
+    long long z=y-x;
+    long long h1=z/3600;
+    z=z-(h1*3600);
+    long long m1=(z/60);
+    z=z-(m1*60);    
+    long long s1=z;
+    cout<<h1<<" "<<m1<<" "<<s1;
+}
