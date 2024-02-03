@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n,el,say=0,cem=0;
+    
+    cin >>n;
+    
+    while(n--){
+        cin>>el;
+        if(el>0 and el%6==0){
+            say=say+1;
+            cem=el+cem;
+        }
+       
+    }
+     cout<<say<<" "<<cem<<endl;
+}
