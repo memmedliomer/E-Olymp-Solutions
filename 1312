@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    int a, b, c, x, y;
+    cin >> a >> b >> c >> x >> y;
+
+    if ((a <= x and b <= y) or (a <= y and b <= x) or
+        (a <= x and c <= y) or (a <= y and c <= x) or
+        (b <= x and c <= y) or (b <= y and c <= x)) {
+        cout << "YES" << endl;
+    } else {
+        cout << "NO" << endl;
+    }
+
+    return 0;
+}
