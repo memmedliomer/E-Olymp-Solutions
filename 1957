@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    long long a,b,c,d;
+    cin>>a;
+    set<long> s;
+    while(a--){
+    	cin>>b;
+    	s.insert(b);
+	}
+	vector<long> v(s.begin(),s.end());
+	cout<<v[v.size()-2];
+}
