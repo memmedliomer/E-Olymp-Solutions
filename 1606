@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+ 
+int main () 
+ 
+{
+  
+    //MY OWN CODE Eagle_of_code
+    long long n,el,say=0,k,f;
+    vector<long> v;
+    cin>>n;
+    n=abs(n);
+    el=n%10;
+    for(int i=0; n>0; i++){
+        k=n%10;
+        v.push_back(k);
+        n=n/10;
+    }
+    f=v.size()-1;
+    cout<<el+v[f];
+}
