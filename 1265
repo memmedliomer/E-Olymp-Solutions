@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    //MY OWN CODE Eagle_of_code
+  long long a,b,c;
+    while(cin>>a>>b>>c){
+        if(a==0 and b==0 and c==0){
+            break;
+        }
+        else if(a*a+b*b==c*c or a*a+c*c==b*b or b*b+c*c==a*a){
+            cout<<"right"<<endl;
+        }
+        else{
+            cout<<"wrong"<<endl;
+        }
+    }
+    
+}
