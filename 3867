@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+
+    long long x,a,b,c;
+    cin>>x>>a>>b;
+    vector<long> v;
+    v.push_back(a);
+      v.push_back(b);
+        v.push_back(x);
+        long long minel=*min_element(v.begin(),v.end());
+        cout<<minel;
+}
