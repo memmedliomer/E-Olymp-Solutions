@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    vector<int> v1;
+    int  n,b;
+    int ma,mi,el;
+    cin>>n;
+    b=n;
+    
+    for(int i=0; i<n; i++){
+        cin>>el;
+        v1.push_back(el);
+        
+    }
+ ma=*max_element(v1.begin(),v1.end());
+ mi=*min_element(v1.begin(),v1.end());
+ if(v1.size()< 2){
+     cout<<"Ooops!"<<endl;
+ }
+else{
+    cout<<mi<<" "<<ma<<endl;
+}
+
+}
