@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() 
+{
+	
+long long a,b,c,w,e,d,g;
+cin>>a;
+c=a;
+vector<long> v,v1,v3;
+while(a--){
+	cin>>b;
+	v.push_back(b);
+}
+/*for(int i=1; i<=v.size(); i++){
+	v1.push_back(i);
+	
+}
+*/
+vector<long> v2(v.begin(),v.end());
+sort(v2.begin(),v2.end());
+reverse(v2.begin(),v2.end());
+
+for(int i=0; i<c; i++){
+	for(int j=0; j<v.size(); j++){
+		if(v2[i]==v[j]){
+			v3.push_back(j+1);
+			v[j]=-101;
+			break;
+		}
+	}
+}
+for(int i=0; i<v3.size(); i++){
+	cout<<v3[i]<<" ";
+}
+}
