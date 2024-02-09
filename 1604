@@ -1,0 +1,22 @@
+#include <iostream>
+#include <math.h>
+#include <stdlib.h>
+using namespace std;
+int main()
+ {
+long long a,b,c,d,i,n,k,s;
+ cin>>n;
+ if (n<0) n=(-n);
+ k=0;
+ c=1;
+ do
+ {
+ b=n%10;
+ if (b%2==0)
+ {c=c*b;}
+ n=n/10;
+ } while (n!=0);
+ if(c!=1)cout<<c<<endl;
+ else cout<<"-1"<<endl;
+return 0;
+ }
