@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+  
+   int b;
+   int d;
+   int e;
+    cin >> b >> d >> e;
+  
+    
+    
+    cout << e+d+b <<endl;
+       
+
+    return 0;
+}
