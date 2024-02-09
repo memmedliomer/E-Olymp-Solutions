@@ -1,0 +1,23 @@
+import math
+
+def find_square_root(n):
+    def func(num):
+        return num * num + math.sqrt(num)
+
+    EPS = 0.0000001
+    left = 0.0
+    right = 100000.0
+    
+    while (right - left) > EPS:
+        mid = (right + left) / 2
+        if func(mid) >= n:
+            right = mid
+        else:
+            left = mid
+    
+    return right
+
+if __name__ == "__main__":
+    num = float(input())
+    result = find_square_root(num)
+    print("{:.9f}".format(result))
