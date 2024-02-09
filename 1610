@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+ long long a,b,x;
+ cin>>a>>b;
+ x=b%a;
+if(x!=0){
+    cout<<b/a+1;
+}
+else{
+    cout<<b/a;
+}
+ }
