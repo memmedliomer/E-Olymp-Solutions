@@ -1,0 +1,9 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+long long n,cem=0;
+while(cin>>n){
+    cem=cem+n;
+}
+cout<<cem;
+}
